@@ -1,0 +1,55 @@
+sudo apt update
+sudo apt install nodejs
+   
+git clone <url>
+cd tflstore
+sudo apt install npm
+npm install express
+npm audit fix --force
+node server.js
+
+
+
+
+########Docker#######
+
+
+sudo apt install docker.io
+sudo docker build -t <imagename> .
+//sudo docker ps
+//sudo systemctl status docker
+sudo docker run --name <anyname> -d -p <portno>:<server port no> <imagename> 
+
+
+
+#####Docker image from dockerhub#######
+
+sudo apt install docker.io
+//sudo docker build -t <imagename> .
+sudo docker ps
+sudo systemctl status docker
+sudo docker images
+sudo docker pull nginx
+sudo docker run --name tflstore -d -p 8080:80 nginx
+
+
+
+####### AWS PUSH #######
+sudo su -
+apt-get update
+apt-get install git
+mkdir dac
+git init 
+nano abc.txt
+git status
+git add abc.txt
+git commit -m "first commit"
+git remote add origin <url>
+git push origin master
+enter username
+pass-token of github repo
+
+
+
+
+ 
